@@ -1,0 +1,551 @@
+\documentclass[twoside,10pt]{book}
+
+%\usepackage[sf,sl,outermarks,bf]{titlesec}
+\usepackage{titlesec}
+
+\def\bGamma{\text{\boldmath$\Gamma$}}
+\def\bh{\text{\boldmath$h$}}
+\def\bgamma{\text{\boldmath$\gamma$}}
+\def\bS{\text{\boldmath$S$}}
+\def\bg{\text{\boldmath$g$}}
+\def\bI{\text{\boldmath$I$}}
+
+%\usepackage{sectsty}
+%\sectionfont{\noindent\fbox}
+
+
+
+
+\renewcommand{\thechapter}{\arabic{chapter}}
+\titleformat{\chapter}[display]
+{\bfseries\Large}
+{\filleft\MakeUppercase{\chaptertitlename} \Huge\thechapter}
+{4ex}
+{\titlerule
+\vspace{2ex}%
+\filright}
+[\vspace{2ex}%
+\titlerule]
+
+
+\titleformat{\section}[block]
+{\fontsize{11pt}{13pt}\selectfont
+\addtolength{\titlewidth}{2pc}%
+%\titleline*[c]{\titlerule*[.6pc]{\tiny\textbullet}}
+\addvspace{5pt}%
+\normalfont\bf\sffamily}
+{\thesection}{1em}{}
+\titlespacing{\section}
+{0pc}{*2}{*2}[0pc]
+
+\titleformat{\subsection}[block]
+{\fontsize{11pt}{13pt}\selectfont
+\addtolength{\titlewidth}{2pc}%
+%\titleline*[c]{\titlerule*[.6pc]{\tiny\textbullet}}
+\addvspace{5pt}%
+\normalfont\bf\sffamily}
+{\thesubsection}{1em}{}
+\titlespacing{\subsection}
+{0pc}{*2}{*2}[0pc]
+
+
+%\usepackage[Conny]{fncychap}
+
+\usepackage[all]{xy}
+\usepackage{makeidx,array,multicol,multirow,tfrupee}
+\usepackage{epsfig}
+\usepackage{amsmath,amsthm}
+\usepackage{multicol,enumerate}
+\usepackage{amssymb,tabularx,amsfonts}
+\usepackage[makeroom]{cancel}
+\usepackage{array,hhline,calc,longtable}
+%\usepackage{txfonts}
+\usepackage{hhline,mathtools}
+\usepackage{dcolumn,lscape}
+\usepackage{color,units,xfrac,mathrsfs}
+\usepackage{url}
+\usepackage{steinmetz,bm,graphicx}
+\usepackage{tcolorbox}
+\usepackage{listings}
+
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+}
+
+\renewcommand{\theequation}{\arabic{equation}}
+
+\numberwithin{equation}{chapter}
+
+
+\newcommand\Bpara[4]{%
+\begin{picture}(0,0)%
+\setlength{\unitlength}{1pt}%
+\put(#1,#2){\rotatebox{#3}{\raisebox{0mm}[0mm][0mm]{%
+\makebox[0mm]{$\left.\rule{0mm}{#4pt}\right\}$}}}}%
+\end{picture}}
+
+\usepackage{tikz}
+
+\newcommand*\mycirc[1]{%
+  \tikz[baseline=(C.base)]\node[draw,circle,inner sep=.7pt](C) {#1};\:
+}
+
+\makeatletter
+\c@tocdepth=5
+\c@secnumdepth=5
+\makeatother
+
+\setcounter{secnumdepth}{5}
+
+
+%\oddsidemargin=0.08in
+%\evensidemargin=0.2in
+%\hoffset2.8in
+\makeindex
+\makeatletter
+\def\@fnsymbol#1{\ensuremath{\ifcase#1\or *\or \dagger\or \ddagger\or
+  \mathsection\or \mathparagraph\or \|\or **\or \dagger\dagger
+  \or \ddagger\ddagger\or \mathsection\mathsection 
+  \or \mathparagraph\mathparagraph \or \|\|\or *{*}*
+  \or \dagger\dagger\dagger \or \ddagger\ddagger\ddagger\or
+  \mathsection\mathsection\mathsection\or \mathparagraph\mathparagraph
+  \mathparagraph \or \|\|\|\else\@ctrerr\fi}}
+   \renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\makeatother
+\renewcommand{\tablename}{Table}
+\renewcommand{\figurename}{Figure}
+\makeatletter
+%\long\def\@makecaption#1#2{%
+%  \vskip\abovecaptionskip
+%  \sbox\@tempboxa{\textit{#1}  \textbf{#2}}%
+%  \ifdim \wd\@tempboxa >\hsize
+%    \textbf{#1} \textbf{#2}\par
+%  \else
+%    \global \@minipagefalse
+%    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+%  \fi
+%  \vskip\belowcaptionskip}
+
+%\renewcommand \thefigure
+%     {\rm\ifnum \c@chapter>\z@ \thechapter.\fi \@arabic\c@figure}
+
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+    \thispagestyle{empty}\hbox{}\newpage\if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+
+
+
+\input macros
+%\input epsf
+%\hoffset=-1in
+
+%\usepackage[papersize={180mm,240mm},textwidth=14.5cm,textheight=19.5cm,
+%topmargin=1.4cm,botmargin=1.4cm,leftmargin=18mm,rightmargin=17mm,
+%headheight=5mm,headsep=5mm,footskip=.7cm,cropmarks,nopagenumbers]{zwpagelayout}
+
+%\setlength{\textwidth}{14.5cm}
+%\setlength{\textheight}{19.5cm}
+%\setlength{\headsep}{16.4528pt}
+
+\theoremstyle{definition}
+\newtheorem{problem}[section]{Problem}
+
+\theoremstyle{plain}
+\newtheoremstyle{thnm}{3pt}{2pt}{\itshape}{}{\bfseries}{}
+{ }{\colorbox{black}{\textcolor{white}{\bf #1 #2}}\;}
+\theoremstyle{thnm}
+\newtheorem{thnm}{Theorem}
+%\newtheorem{relation}{Relation}
+%\newtheorem{thnm}{Theorem}
+\newtheoremstyle{st}{}{}{\rm}{}%
+{\bfseries}{ }{ }{#1 #2:\mdseries #3}
+\theoremstyle{st}
+
+
+
+\newtheoremstyle{pro}{}{}{\rm}{}%
+{}{ }{ }{#1}
+\theoremstyle{pro}
+\newtheorem{pro}{\underline{Proof} :}%%
+
+
+\newenvironment{bpro}{\noindent\textbf{\textit{Proof}.}}{}
+
+\newtheorem{stage}{Stage}
+
+
+\newtheoremstyle{nonum}{}{}{\itshape}{}%
+{\bfseries}{:}{ }{#1 \mdseries #3}
+\newtheoremstyle{nonpro}{}{}{\rm}{}%
+{\bfseries}{:}{ }{#1 \mdseries #3}
+
+\usepackage{etoolbox}
+\newtheoremstyle{solution}{}{}{\rm}{}{}{}{ }{#1. #3}
+\theoremstyle{solution}
+\newtheorem{solution}{{\large\ding{45}} {\sf\bfseries Solution}}
+
+
+\newtheoremstyle{newnonumber}{}{}{\rm}{}{\bfseries}{}{ }{\bf #1. #3}
+\theoremstyle{newnonumber}
+\newtheorem{exam*}{Example}
+\newtheorem{ans}{Ans}
+
+\theoremstyle{nonum}
+
+
+%% without no.
+\newtheoremstyle{cor}{3pt}{3pt}{\itshape}{}{\bfseries}{:}
+{ }{}
+%\theoremstyle{cor}
+\newtheorem{cor}{Corollary}
+
+
+%%with no.
+\newtheoremstyle{corno}{3pt}{3pt}{\itshape}{}{\bfseries}{.\;}
+{ }{}
+\theoremstyle{corno}
+\newtheorem{corno}{Corollary}
+
+
+%%with no. box
+\newtheoremstyle{cornobox}{3pt}{3pt}{\itshape}{}{\bfseries}{}
+{ }{\colorbox{white}{\textcolor{black}{\bf #1:}}\;}
+\theoremstyle{cornobox}
+\newtheorem{cornobox}{Corollary}
+
+%\newtheorem{cor}{Corollary}
+\theoremstyle{nonpro}
+
+
+\newtheoremstyle{gen}{3pt}{2pt}{\itshape}{}{\bfseries}{}
+{ }{\colorbox{black}{\textcolor{white}{\bf #1}}\;}
+\theoremstyle{gen}
+\newtheorem{gen}{Generalization}%%
+
+%%%%% example without box and also with no.
+\newtheoremstyle{exam}{3pt}{2pt}{}{}{\bfseries}{.}{ }{}
+\theoremstyle{exam}
+\newtheorem{exam}{Example}
+\newtheorem{exer}{{\large P}}[chapter]
+
+
+%%%%%%%%%%%%
+%%%%%%%%
+%\newtheoremstyle{example}{3pt}{2pt}{ }{}{}{}
+%{ }{\sc\bfseries #1 #2\;}
+%\theoremstyle{example}
+%\newtheorem{example}{{\large E}xample}[chapter]
+
+%%%%
+
+%%%%%%%% Example without number %%%%%%%%
+%\newtheoremstyle{exampleno}{3pt}{2pt}{\fontshape{it}\fontsize{11}{16}\selectfont}{}{\bfseries}{}
+%{ }{\colorbox{black}{\textcolor{white}{\bf #1}}\;}
+%\theoremstyle{exampleno}
+%\newtheorem{exampleno}{Example}
+%%%%%%%%%
+
+
+
+%\newtheoremstyle{example}{3pt}{2pt}{\fontshape{}\fontsize{11}{16}\selectfont}{}{\bfseries}{}
+%{ }{\colorbox{black}{\textcolor{white}{\bf #1 #2}}\;}
+%\theoremstyle{example}
+%\newtheorem{example}{Example}[chapter]
+
+\usepackage{pifont}
+
+%\renewcommand*\sfdefault{ugq}
+%\usepackage[T1]{fontenc}
+
+\usepackage{xcolor}
+
+\usepackage{color}
+
+%\let\oldv\verbatim
+%\let\oldendv\endverbatim
+
+%\def\verbatim{\par\setbox0\vbox\bgroup\oldv}
+%\def\endverbatim{\oldendv\egroup\fboxsep0pt \noindent\colorbox[gray]{0.8}{\usebox0}\par}
+
+
+\usepackage{fancyvrb}
+
+
+\makeatletter
+\newif\ifFV@bgcolor
+\newbox\FV@bgbox
+\define@key{FV}{bgcolor}{\FV@bgcolortrue\def\FV@bgcolor{#1}}
+
+\def\FV@BeginVBox{%
+  \leavevmode\ifFV@bgcolor\setbox\FV@bgbox=\fi
+  \hbox\ifx\FV@boxwidth\relax\else to\FV@boxwidth\fi\bgroup
+  \ifcase\FV@baseline\vbox\or\vtop\or$\vcenter\fi\bgroup}
+\def\FV@EndVBox{\egroup\ifmmode$\fi\hfil\egroup
+  \ifFV@bgcolor\colorbox{\FV@bgcolor}{\box\FV@bgbox}\fi}
+\makeatother
+
+\usepackage{shadethm}
+ 
+\newshadetheorem{example}{\sffamily\bfseries\ding{234} Example}[chapter]
+\definecolor{shadethmcolor}{HTML}{A29d9c}
+\definecolor{shaderulecolor}{HTML}{A29d9c}
+\setlength{\shadeboxrule}{.2pt}
+
+%\definecolor{ggray}{RGB}{121, 121, 121}
+
+%\definecolor{lightgray}{RGB}{110, 110, 110}
+
+
+%\usepackage{thmtools}
+%\declaretheoremstyle[
+%  headfont=\color{ggray}\normalfont\bfseries,
+%  bodyfont=\color{ggray}\normalfont\itshape,
+%]{colored}
+
+%\declaretheorem[
+%  style=colored,
+%  name=\sffamily\bfseries\ding{234} Example,
+%]{example}
+
+
+%\newtheoremstyle{example}{3pt}{2pt}{\it}{}{\bfseries}{}{ }{\sffamily\bfseries\ding{234} #1 #2.}
+%\theoremstyle{example}
+%\newtheorem{example}{Example}[chapter]
+
+
+\newenvironment{Ventry}[1]%
+{\begin{list}{}{\renewcommand{\makelabel}[1]{\textsf{##1:}\hfil}%
+\settowidth{\labelwidth}{\textsf{#1:}}%
+\setlength{\leftmargin}{\labelwidth+\labelsep}}}%
+{\end{list}}
+
+
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\def\heading#1{\medskip{\noindent\sf\bfseries #1}}
+\def\itheading#1{\medskip{\noindent{\sf\it\bfseries #1}}}
+
+\def\them{
+\begin{center}
+\rule{6cm}{1pt}\\[-3pt]
+{\noindent\textbf{\large Theorem}}\\[-8pt]
+\rule{6cm}{1pt}
+\end{center}}
+
+\newcommand{\puttri}{\noindent\llap{$\square$\;}}
+
+%%%%%%%%%%%%% float packages%%%%%%%%%%%%%
+%%% Need to uncomment this portion
+\usepackage{float}
+\floatstyle{plain}
+\floatplacement{Figure}{H}
+%\usepackage{subfigure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hfuzz=0.55pt
+\def\dsize{\fontsize{10}{12}\selectfont}
+\def\Subsection#1{\subsection{#1}\markright{{\it\bfseries\thesubsection.~#1}}}
+
+
+\DeclareMathOperator{\cosec}{cosec}
+
+
+
+\def\p{\partial}
+\def\v{\varphi}
+
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bes{\begin{equation*}}
+\def\ees{\end{equation*}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\footrulewidth}{0pt}
+\chead[]{}
+\lhead[\small\it\thepage]{\small\it Engineering Mathematics} 
+\rhead[\small\leftmark]{\small\it\thepage}
+\lfoot[]{}
+\cfoot[]{}
+\rfoot[]{}
+\renewcommand\chaptermark[1]{\markboth{\slshape\thechapter.~ #1}{}}
+\renewcommand\sectionmark[1]{\markright{\slshape\thesection.~ #1}}
+
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[C]{\small\bfseries \thepage} % except the center
+\renewcommand{\headrulewidth}{0pt}}
+
+
+
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\captionsetup[figure]{textfont={sf,bf},labelfont={sf,bf},justification=centering}
+%\captionsetup[figure]{textfont=bf,labelfont=bf,justification=centering}
+\captionsetup[table]{textfont={sf,bf},labelfont={sf,bf},justification=centering}
+%\captionsetup[table]{textfont=it,labelfont=bf,justification=centering}
+\showcaptionsetup{figure}
+\renewcommand{\tablename}{\sf\bfseries Table}
+\renewcommand{\figurename}{\sf\bfseries Fig.}
+%\makeatletter
+%\renewcommand\thefigure
+%     {\rm\ifnum \c@chapter>\z@ {\thechapter.\fi \@arabic\c@figure}}
+%\makeatother
+
+
+\begin{document}
+\frontmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%Table of contents
+\renewcommand\contentsname{Contents}
+%\makeatletter
+%\renewcommand\section{\@startsection {section}{1}{0mm}%
+%                                   {-0.9ex \@plus -0.5ex \@minus -.2ex}%
+%                                   {0.8ex \@plus.2ex}%
+%                                   {\normalfont\Large\bfseries}}
+%\renewcommand\subsection{\@startsection{subsection}{2}{0mm}%
+%                                     {-0.9ex\@plus -1ex \@minus -.2ex}%
+%                                     {0.8ex \@plus .2ex}%
+%                                     {\normalfont\Large\bfseries}}
+
+%\def\@makeschapterhead#1{%
+%  \vspace*{2.5\p@}%
+%  {\parindent \z@ \centering
+%    \normalfont
+%    \interlinepenalty\@M
+%    \Huge\bfseries  #1
+%    \vskip 1\p@
+%    \indent\rule{\textwidth}{2pt} 
+%    \vskip 10pt
+% }}
+%\makeatother
+%\input halftitle
+
+%\input mainpage
+%\newpage
+%\input info
+%\newpage
+%~\thispagestyle{empty}
+
+%\newpage
+%\input preface
+%\newpage
+
+\makeatletter
+\newcommand{\thnum}[1]{#1\renewcommand{\@currentlabel}{#1}}
+\makeatother
+
+
+%\makeatletter
+%\def\@makeschapterhead#1{%
+%  \vspace*{2.5\p@}%
+%  {\parindent \z@ \centering
+%    \normalfont
+%    \interlinepenalty\@M
+%    \Huge\bfseries  #1
+%    \vskip 1\p@
+%    \indent\rule{\textwidth}{2pt} 
+%    \vskip 10pt
+% }}
+%\makeatother
+\thispagestyle{empty}
+%\baselineskip=\odimen
+
+
+
+%%%%%%%%%%%%%%%%%%
+
+\allowdisplaybreaks
+
+\newdimen\odimen
+\odimen=\baselineskip
+%\makeatletter
+%\def\@makeschapterhead#1{%
+%  \vspace*{2.5\p@}%
+%\baselineskip=15.3pt
+%  {\parindent \z@ \centering
+%    \normalfont
+%    \thispagestyle{empty}
+%    \interlinepenalty\@M
+%    \Huge\bfseries  #1\par\nobreak
+%    \vskip 12\p@
+%    \hrule height 2pt 
+    %\markboth{}{}
+    %\markright{}
+%    \vskip 10pt
+% }}
+%\makeatother
+\thispagestyle{empty}
+\baselineskip=\odimen
+
+\tableofcontents
+\thispagestyle{empty}
+
+\mainmatter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\fontfamily{cmr}\fontseries{n}\selectfont
+\input src/chapter1
+%\input src/chapter2
+%\input src/chapter3
+%\input src/chapter4
+%\input src/chapter5
+%\input src/chapter6
+%\input src/chapter7
+%\input src/chapter8
+\end{document}
+
+\newpage
+~\phantom{a}
+\thispagestyle{empty}
+\newpage
+\renewcommand{\thepage}{Q-\arabic{page}}
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[C]{\bfseries \thepage} % except the center
+\renewcommand{\headrulewidth}{0pt}}
+
+%\input qpaper
+%\appendix
+%\input dspmanual
+%\input appendix
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%Redefining index
+\end{document}
+
+\newpage
+
+\renewcommand{\thepage}{I-\arabic{page}}
+\setcounter{page}{1}
+
+\makeatletter
+\renewenvironment{theindex}{\newpage
+\@makeschapterhead{\indexname}
+   \markboth{\it\bfseries \indexname}%
+                        {\it\bfseries\indexname}%
+\addtocontents{toc}{\protect\contentsline{chapter}{Index}{\thepage--\pageref{index}}}
+\addtocontents{toc}{\protect\contentsline{chapter}{\protect\medskip}{}}
+\addtocontents{toc}{\protect\contentsline{chapter}{VTU Syllabus 5th Sem ECE :}{}}
+\addtocontents{toc}{\protect\contentsline{chapter}{\hbox{Don't  refer  article 3.9; 3.10; 3.13; 5.4; 5.5; 6.8.5; 6.9; 6.10; 7.2.4; 7.2.5; 7.3; 7.3.1.}}{}}
+\addtocontents{toc}{\protect\contentsline{chapter}{VTU Syllabus 6th Sem EEE :}{}}
+\addtocontents{toc}{\protect\contentsline{chapter}{Don't  refer  article 3.9; 3.10; 3.11; 3.12; 5.4; 5.5; 6.9; 7.4.4; 7.4.5.}{}}
+
+\thispagestyle{plain}\let\item\@idxitem
+
+\begin{multicols}{3}
+\par\bigskip}%
+{\end{multicols}}%
+\makeatother
+
+\lhead[\small\it Index]{\small\it\thepage} 
+\rhead[\small\it\thepage]{\small\it Index}
+{\printindex}\relax
+
+\label{index}
+
+\end{document}
