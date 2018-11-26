@@ -226,5 +226,119 @@ D_{z_{3}} & = \overrightarrow{D_{3}} \cdot \overrightarrow{a_{z}} = D_{3} \cos (
 \end{align*}
 \end{solution}
 
+\newpage
+
+\begin{itemize}
+\item[(a)] Thus current density,
+$$
+\mathbf{J}=\dfrac{K}{\rho} \ \mathbf{a}_{\rho}=\dfrac{31.4658}{\rho} \ \mathbf{a}_{\rho}A/m^{2}
+$$
+The electric field intensity in region $2<\rho<3$, 
+$$
+\mathbf{E}_{1}=\dfrac{K}{100\rho} \ \mathbf{a}_{\rho}=\dfrac{31.4658}{100\rho} \ \mathbf{a}_{\rho}=\dfrac{0.3147}{\rho} \ \mathbf{a}_{\rho} V/m
+$$
+For $3<\rho<6$, the electric field intensity
+$$
+\mathbf{E}_{2}=\dfrac{K}{25\rho} \ \mathbf{a}_{\rho}=\dfrac{31.4658}{25\rho} \ \mathbf{a}_{\rho}=\dfrac{1.2586}{\rho} \ \mathbf{a}_{\rho}V/m
+$$
+
+\item[(b)] At $\rho=2$ cm, the current crossing the cylindrical surface is
+\begin{align*}
+I &= |\mathbf{J}|\times 2\pi \rho L=\dfrac{31.3658}{\rho}\times 2\pi \rho L\\
+  &= 31.3658\times 2\pi\times 0.5=98.80~\text{A}
+\end{align*}
+The total current is independent to radius of cylinder $\rho$. The potential between the cylinders is $1$ V. Thus the resistance offered by the cylindrical resistance is
+$$
+R=\dfrac{V}{I}=\dfrac{1}{98.80}=0.01012\Omega = 10.12~ \text{m}\Omega
+$$
+
+\item[(c)] The potential at $\rho=3$ cm is
+\begin{align*}
+V &= -\int\limits^{3}_{6}E_{2}.d\rho =- \int\limits^{3}_{6}\dfrac{31.4658}{25\rho}.d\rho\\
+  &= \dfrac{31.4658}{25}ln~2=0.8724\text{~V}
+\end{align*}
+\end{itemize}
+
+\setcounter{problem}{15}
+\begin{problem}
+The cross-section of the transmission line shown in Fig.~6.24 is drawn on a sheet of conducting paper with metallic paint. The sheet resistance is $2500\Omega$ per square and the dimension $a$ is $1$ in. (a) Assuming a result for Prob. $6b$ of $120 pF/m$, what total resistance would be measured between the metallic conductors drawn on the conducting paper? (b) What would the total resistance be if $a=0.6$ cm?
+\end{problem}
+
+Given the metallic paint on the sheet of paper shown in Fig.~6.24. The resistance of sheet is 2500 per square, dimension $a=1$ inch.
+\begin{itemize}
+\begin{minipage}[c]{4.2cm}
+\item[(a)] The permittivity is $\epsilon_{R}=1.6$. The calculated capacitance is $120$ pF/m. Let the thickness of paper be $t$. The total capacitance offered is $C=120t$ pF. The current is flowing from inner rim to outer rim in a non-uniform fashion.
+
+The product of resistance and capacitance of a similar geometry is
+$$
+RC=\dfrac{d}{\sigma S}\times \dfrac{\epsilon S}{d}=\dfrac{\epsilon_{0}\epsilon_{R}}{\sigma}
+$$
+\end{minipage}
+\qquad
+\begin{minipage}[c]{5cm}
+\begin{figure}[H]
+\centering
+\includegraphics{images/new-1.eps}
+\caption{Metallic paint on the sheet of paper-conduction from inner conductor to outer conductor}
+\end{figure}
+\end{minipage}
+
+This gives
+$$
+R=\dfrac{1.6\times 8.85}{120 t\sigma}
+$$
+But the resistance of sheet is 2500 per square dimension $a=1$ inch.
+$$
+R_{S}=\dfrac{1}{\sigma\times t}=2500\Omega \Rightarrow \sigma\times t=\dfrac{1}{2500}
+$$
+Thus the resistance is
+$$
+R=\dfrac{1.6\times 8.85}{120 t\sigma}=\dfrac{1.6\times 8.85\times 2500}{120}=295 \Omega
+$$
+
+
+\item[(b)] If $a=0.6$ cm, the resistance of sheet per square inch does not vary by changing the square size, because
+$$
+R_{S}=\dfrac{1}{\sigma\times t}=2500\Omega \Rightarrow \sigma\times t=\dfrac{1}{2500}
+$$
+Thus the resistance is again
+$$
+R=\dfrac{1.6\times 8.85}{120 t\sigma}=\dfrac{1.6\times 8.85\times 2500}{120}=295\Omega
+$$
+\end{itemize}
+
+\begin{problem}
+The cross-section of a coaxial transmission line is drawn on a sheet of conducting paper using the dimensions $a=0.5$ in and $b=3$ in. Silver paint is used for the two conducting surfaces. If a resistance of $1000\Omega$ is measured between conductors: (a) What is the resistance per square of the paper? (b) If the conducting layer on the paper is $0.008$ in thick, what is the conductivity of the resistive coating?
+\end{problem}
+
+\noindent
+Dimension of coaxial line $a=0.5$ in and $b=3$ in. A silver paint is used for the two conducting surfaces.
+\begin{itemize}
+\item[(a)] Here resistance between the conductor is $1000\Omega$.
+
+Let the thickness of paint be $t$. The capacitance is
+\begin{align*}
+C &= \dfrac{2\pi \epsilon_{0}}{ln(b/a)}\times t=\dfrac{2\times \pi \times 8.85}{ln(3/0.5)}\times t=31.09\times t \ \text{pF}\\
+\text{But}\qquad RC &= \dfrac{\epsilon_{0}}{\sigma}
+\end{align*}
+The resistance is
+\begin{align*}
+R &= \dfrac{\epsilon_{0}}{\sigma C}=\dfrac{8.85 ln (6)}{2\pi\times 8.85\sigma t}=1000\\
+\Rightarrow\qquad \sigma t &= \dfrac{ln(6)}{2\pi \times 1000}=2.83\times 10^{-4}
+\end{align*}
+But the resistance of sheet per square of the paper is
+$$
+R_{S}=\dfrac{1}{\sigma\times t}=\dfrac{1}{2.83\times 10^{-1}}=3504.94\Omega
+$$
+
+\item[(b)] The conducting layer of the coating is $0.008$ in $=0.008\times 0.0254$ m thick. The conductivity of resistive coating is
+\begin{align*}
+\dfrac{1}{\sigma\times t} &= 3504.94\Omega\\
+\text{or}\qquad \sigma &= \dfrac{1}{3504.94\times t}=\dfrac{1}{3504.94\times 0.008\times 0.0254}=1.404  \mho/m
+\end{align*}
+
+\end{itemize}
+
+
 \label{27end}
 

@@ -6,7 +6,7 @@ Under static condition, as all charges lie on the outer surface of the conductor
 \section{Boundary conditions at the conductor-dielectric interface}
 \begin{figure}[H]
 \centering
-\includegraphics{images/fig1.eps}
+\includegraphics[scale=1.1]{images/fig1.eps}
 \caption{Conductor-dielectric interface}\label{chap27-fig1}
 \end{figure}
 
@@ -49,7 +49,7 @@ In Eqn.~\eqref{chap27-eq3}, the 2$^{\text{nd}}$ integral is zero because the bot
 \section{Boundary conditions at the dielectric-dielectric interface}\label{chap27-sec2}
 \begin{figure}[H]
 \centering
-\includegraphics{images/fig2.eps}
+\includegraphics[scale=1.1]{images/fig2.eps}
 \caption{Dielectric-dielectric interface}\label{chap27-fig2}
 \end{figure}
 
@@ -95,7 +95,7 @@ Therefore across dielectric-dielectric interface normal component of $\overright
 Given that $\overrightarrow{E_{1}} = 2\overrightarrow{a_{x}} - 3\overrightarrow{a_{y}} + 5\overrightarrow{a_{z}}$ across dielectric-dielectric interface shown in Fig.~\ref{chap27-fig3}. Find $\overrightarrow{E_{2}}, \overrightarrow{D_{1}}, \overrightarrow{D_{2}}$ and the angles $\theta_{1}$ and $\theta_{2}$. 
 \begin{figure}[H]
 \centering
-\includegraphics{images/fig3.eps}\label{chap27-fig3}
+\includegraphics[scale=1.1]{images/fig3.eps}\label{chap27-fig3}
 \end{figure}
 \end{problem}
 
@@ -133,9 +133,11 @@ At the boundary between given ($\varepsilon_{r} = 4$) and air, the lines of elec
 \end{problem}
 
 \begin{solution}
+~
+
 \begin{figure}[H]
 \centering
-\includegraphics{images/fig4.eps}\label{chap27-fig4}
+\includegraphics[scale=1.1]{images/fig4.eps}\label{chap27-fig4}
 \end{figure}
 
 For dielectric-dielectric interface,
@@ -163,9 +165,11 @@ An electric field strength 1.2 V/m is entering a dielectric medium of $\epsilon_
 \end{problem}
 
 \begin{solution}
+~
+
 \begin{figure}[H]
 \centering
-\includegraphics{images/fig5.eps}\label{chap27-fig5}
+\includegraphics[scale=1.1]{images/fig5.eps}\label{chap27-fig5}
 \end{figure}
 
 Across dielectric-dielectric boundary, 
@@ -178,7 +182,7 @@ E_{1} \sin \theta_{1} & = \dfrac{\varepsilon_{r_{2}}}{\varepsilon_{1}} E_{2} \si
 \therefore\quad \tan \theta_{1} & = \dfrac{\varepsilon_{r_{2}}}{\varepsilon_{1}} \tan \theta_{2}\notag\\
 \tan 65 & = \dfrac{4}{1} \tan \theta_{2}\notag\\
 \therefore\quad \theta_{2} & = 28.2^{\circ}\notag
-\end{align*}
+\end{align}
 
 Given that $E_{1} = 1.2 Vm^{-1}$
 
@@ -189,6 +193,7 @@ From
 \end{align*}
 \end{solution}
 
+
 \begin{problem}
 In region $1 ; (z < 0m)$ (free space) where $D_{1} = 5\overrightarrow{a_{y}} + 7\overrightarrow{a_{z}} \text{c/m}^{2}$; region $2 ; (0 < z < 1m)$ has $\epsilon_{r_{2}} = 2.5$ and region $3 ; (z > 1m)$ has $\epsilon_{r_{3}} = 3.0$
 
@@ -196,9 +201,11 @@ Find $E_{1}, D_{2}, E_{2}, D_{3}, E_{3}$ and $\theta_{3}$
 \end{problem}
 
 \begin{solution}
+~
+
 \begin{figure}[H]
 \centering
-\includegraphics{images/fig5.eps}\label{chap27-fig6}
+\includegraphics[scale=1.1]{images/fig6.eps}\label{chap27-fig6}
 \end{figure}
 
 Given:

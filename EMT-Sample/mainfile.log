@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=latex 2018.8.13)  24 NOV 2018 13:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=latex 2018.8.13)  26 NOV 2018 13:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1193,7 +1193,14 @@ Caption Info: Option list on `figure'
 Caption Data: {textfont={sf,bf},labelfont={sf,bf},justification=centering} on i
 nput line 396.
 
-(./mainfile.aux)
+(./mainfile.aux
+
+LaTeX Warning: Label `chap27-eq2' multiply defined.
+
+
+LaTeX Warning: Label `??' multiply defined.
+
+)
 \openout1 = `mainfile.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 405.
@@ -1221,7 +1228,22 @@ ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 \odimen=\dimen342
- (./mainfile.toc)
+ (./mainfile.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 2.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+))
 \tf@toc=\write9
 \openout9 = `mainfile.toc'.
 
@@ -1238,58 +1260,24 @@ LaTeX Font Warning: Font shape `OT1/cmr/n/n' undefined
 
 (./src/chapter1.tex
 Chapter 27.
-LaTeX Font Info:    Try loading font information for U+msa on input line 4.
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 4.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 4.
-
-(/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
 File: images/fig1.eps Graphic file (type eps)
-
 <images/fig1.eps>
 Underfull \vbox (badness 4416) has occurred while \output is active []
 
  [1
 
 ]
-
-LaTeX Warning: Reference `chap27-eq1' on page 2 undefined on input line 23.
-
-
-LaTeX Warning: Reference `chap27-eq2' on page 2 undefined on input line 23.
-
-
-LaTeX Warning: Reference `chap27-eq3' on page 2 undefined on input line 43.
-
 File: images/fig2.eps Graphic file (type eps)
+
 <images/fig2.eps>
 Underfull \vbox (badness 1158) has occurred while \output is active []
 
  [2]
-
-LaTeX Warning: Reference `chap27-fig2' on page 3 undefined on input line 57.
-
-
-LaTeX Warning: Reference `chap27-eq4' on page 3 undefined on input line 59.
-
-
-LaTeX Warning: Reference `chap27-eq4' on page 3 undefined on input line 64.
-
-
-LaTeX Warning: Reference `???' on page 3 undefined on input line 77.
-
-
-LaTeX Warning: Reference `chap27-eq27.5' on page 3 undefined on input line 82.
-
 [3]
+
+Package caption Warning: \label without proper reference on input line 98.
+See the caption package documentation for explanation.
+
 
 LaTeX Warning: Reference `chap27-fig3' on page 4 undefined on input line 95.
 
@@ -1301,12 +1289,14 @@ File: images/fig5.eps Graphic file (type eps)
  <images/fig5.eps> [6]
 File: images/fig6.eps Graphic file (type eps)
 
-<images/fig6.eps> [7])
+<images/fig6.eps> [7] [8]
+File: images/new-1.eps Graphic file (type eps)
+ <images/new-1.eps> [9] [10])
 
 Package caption Warning: Unused \captionsetup[table] on input line 394.
 See the caption package documentation for explanation.
 
-[8] (./mainfile.aux)
+[11] (./mainfile.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1314,16 +1304,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29409 strings out of 492996
- 559022 string characters out of 6132715
- 638627 words of memory out of 5000000
- 32444 multiletter control sequences out of 15000+600000
+ 29411 strings out of 492996
+ 559047 string characters out of 6132715
+ 638689 words of memory out of 5000000
+ 32445 multiletter control sequences out of 15000+600000
  15851 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 65535
- 54i,22n,73p,10375b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,22n,73p,10375b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mainfile.dvi (10 pages, 32960 bytes).
+Output written on mainfile.dvi (13 pages, 43964 bytes).
