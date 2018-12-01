@@ -1,9 +1,9 @@
 \setcounter{chapter}{26}
 \chapter{Boundary Conditions for Electric Fields}\label{chap27}
 
-Under static condition, as all charges lie on the outer surface of the conductor, the $\overrightarrow{E}$ and $\overrightarrow{D}$ are zero within the conductor.
+Under static condition, as all charges lie on the outer surface of the conductor, the $\vec{E}$ and $\vec{D}$ are zero within the conductor.
 
-\section{Boundary conditions at the conductor-dielectric interface}
+\section{Boundary conditions at the conductor-dielectric\break interface}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1.1]{images/fig1.eps}
@@ -12,41 +12,39 @@ Under static condition, as all charges lie on the outer surface of the conductor
 
 We know that static electric field is a conservative field. 
 $$
-\text{i.e.,}\qquad \oint \overrightarrow{E} \cdot \overrightarrow{dL} = 0
+\textstyle\text{i.e.,}\qquad \oint \vec{E} \cdot \vec{dL} = 0
 $$
-
 Consider a closed rectangular path 12341 shown in Fig.~????
-\begin{equation}
-\oint \overrightarrow{E} \cdot \overrightarrow{dL} = \int_{1}^{2} \overrightarrow{E} \cdot \overrightarrow{dL} + \int_{2}^{3} \overrightarrow{E} \cdot \overrightarrow{dL} + \int_{3}^{4} \overrightarrow{E} \cdot \overrightarrow{dL} + \int_{4}^{5} \overrightarrow{E} \cdot \overrightarrow{dL} = 0\label{chap27-eq1}
-\end{equation}
+\begin{equation*}
+\textstyle\oint \vec{E} \cdot \vec{dL} = \int\limits_{1}^{2} \vec{E} \cdot \vec{dL} + \int\limits_{2}^{3} \vec{E} \cdot \vec{dL} + \int\limits_{3}^{4} \vec{E} \cdot \vec{dL} + \int\limits_{4}^{5} \vec{E} \cdot \vec{dL} = 0\label{chap27-eq1}
+\end{equation*}
 
-In Eqn.~\eqref{chap27-eq1}, the 3$^{\text{rd}}$ integral is zero because the path 3 to 4 is within the conductor where $\overrightarrow{E}$ is zero. If the path lengths 2 to 3 and 4 to 1 approaches zero (i.e., across boundary), the 2$^{\text{nd}}$ and 4$^{\text{th}}$ integral, in Eqn.~\eqref{chap27-eq2} are zero.
-\begin{equation}
-\therefore\quad \text{We get } \ \int_{1}^{2} \overrightarrow{E} \cdot \overrightarrow{dL} = \int E_{t}dL = 0\label{chap27-eq2}
-\end{equation}
+In Eqn.~\eqref{chap27-eq1}, the 3$^{\text{rd}}$ integral is zero because the path 3 to 4 is within the conductor where $\vec{E}$ is zero. If the path lengths 2 to 3 and 4 to 1 approaches zero (i.e., across boundary), the 2$^{\text{nd}}$ and 4$^{\text{th}}$ integral, in Eqn.~\eqref{chap27-eq2} are zero.
+\begin{equation*}
+\textstyle\therefore\quad \text{We get } \ \int\limits_{1}^{2} \vec{E} \cdot \vec{dL} = \int E_{t}dL = 0\label{chap27-eq2}
+\end{equation*}
 
-Where $E_{t}$ is the tangential component of $\overrightarrow{E}$ at the surface of the dielectric. 
+Where $E_{t}$ is the tangential component of $\vec{E}$ at the surface of the dielectric. 
 
 From Eqn.~\label{chap27-eq2}, we get 
 $$
-E_{t} = 0\quad \text{\&}\quad D_{t} = 0
+\textstyle E_{t} = 0\quad \text{\&}\quad D_{t} = 0
 $$
-
 Now consider a Gaussian right circular cylinder placed across the boundary as shown in Fig-. From Gauss's law, 
 $$
-\oint \overrightarrow{D} \cdot \overrightarrow{ds} = Q_{\text{enclosed}}.
+\textstyle\oint \vec{D} \cdot \vec{ds} = Q_{\text{enclosed}}.
 $$
-\begin{equation}
-\int\limits_{\text{top}} \overrightarrow{D} \cdot \overrightarrow{ds} + \int\limits_{\text{bottom}} \overrightarrow{D} \cdot \overrightarrow{ds} + \int\limits_{\text{side}} \overrightarrow{D} \cdot \overrightarrow{ds} = \int_{s} P_{s}ds\label{chap27-eq3}
-\end{equation}
+\begin{equation*}
+\textstyle\int\limits_{\text{top}} \vec{D} \cdot \vec{ds} + \int\limits_{\text{bottom}} \vec{D} \cdot \vec{ds} + \int\limits_{\text{side}} \vec{D} \cdot \vec{ds} = \int\limits_{s} P_{s}ds\label{chap27-eq3}
+\end{equation*}
 
-In Eqn.~\eqref{chap27-eq3}, the 2$^{\text{nd}}$ integral is zero because the bottom of the cylinder is within the conductor where $\overrightarrow{D}$ and $\overrightarrow{E}$ are zero. The 3$^{\text{rd}}$ integral is zero because $D_{t} = 0$. 
+In Eqn.~\eqref{chap27-eq3}, the 2$^{\text{nd}}$ integral is zero because the bottom of the cylinder is within the conductor where $\vec{D}$ and $\vec{E}$ are zero. The 3$^{\text{rd}}$ integral is zero because $D_{t} = 0$. 
 \begin{align*}
-\therefore \ & \oint\limits_{\text{top}} \overrightarrow{D} \cdot \overrightarrow{ds} = \int\limits_{\text{top}} D_{n}ds = \int_{s} \rho_{s}ds\\
+\therefore \ & \textstyle\oint\limits_{\text{top}} \vec{D} \cdot \vec{ds} = \int\limits_{\text{top}} D_{n}ds = \int\limits_{s} \rho_{s}ds\\
 \therefore \ & D_{n} = \rho_{s} ~\&~ E_{n} = \dfrac{\rho_{s}}{\epsilon}
 \end{align*}
 
-\section{Boundary conditions at the dielectric-dielectric interface}\label{chap27-sec2}
+\section{Boundary conditions at the dielectric-dielectric\break interface}\label{chap27-sec2}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1.1]{images/fig2.eps}
@@ -57,42 +55,44 @@ In Eqn.~\eqref{chap27-eq3}, the 2$^{\text{nd}}$ integral is zero because the bot
 Consider a dielectric - dielectric interface as shown in Fig.~\ref{chap27-fig2}
 
 Applying Eqn.~\eqref{chap27-eq4} to the closed path 12341,
-\begin{equation}
-\int_{1}^{2} \overrightarrow{E} \cdot \overrightarrow{dL} + \int\limits_{2}^{3} \overrightarrow{E} \cdot \overrightarrow{dL} + \int\limits_{3}^{4} \overrightarrow{E} \cdot \overrightarrow{dL} + \int\limits_{4}^{1} \overrightarrow{E} \cdot \overrightarrow{dL} = 0\label{chap27-eq4}
-\end{equation}
+\begin{equation*}
+\textstyle\int\limits_{1}^{2} \vec{E} \cdot \vec{dL} + \int\limits_{2}^{3} \vec{E} \cdot \vec{dL} + \int\limits_{3}^{4} \vec{E} \cdot \vec{dL} + \int\limits_{4}^{1} \vec{E} \cdot \vec{dL} = 0\label{chap27-eq4}
+\end{equation*}
 
 In Eqn.~\eqref{chap27-eq4}, if the path lengths 2 to 3 and 4 to 1 approaches zero (i.e.., across boundary), the 2$^{\text{nd}}$ and 4$^{\text{th}}$ integrals are zero. 
 \begin{align*}
-\therefore\quad  &\int\limits_{1}^{2} \overrightarrow{E} \cdot \overrightarrow{dL} + \int\limits_{3}^{4} \overrightarrow{E} \cdot \overrightarrow{dL} = 0\\
- & \int E_{t_{1}}dL - \int E_{t_{2}}dL  = 0\\
- & \int \left(E_{t_{1}} - E_{t_{2}}\right)dL  = 0\\
+\therefore\quad  &\textstyle\int\limits_{1}^{2} \vec{E} \cdot \vec{dL} + \int\limits_{3}^{4} \vec{E} \cdot \vec{dL} = 0\\
+ & \textstyle\int E_{t_{1}}dL - \int E_{t_{2}}dL  = 0\\
+ & \textstyle\int \left(E_{t_{1}} - E_{t_{2}}\right)dL  = 0\\
  & E_{t_{1}} - E_{t_{2}} = 0
 \end{align*} 
 $$
 \therefore\quad E_{t_{1}} = E_{t_{2}} \quad\text{\&}\quad \dfrac{D_{t_{1}}}{\varepsilon_{r_{1}}} = \dfrac{Dt_{2}}{\varepsilon_{r_{2}}}
 $$
 Therefore across dielectric-dielectric interface 
-tangential component of $\overrightarrow{E}$ is continuous cylindrical. 
+tangential component of $\vec{E}$ is continuous cylindrical. 
 
 Applying Eqn~.\eqref{???}, to the Gaussian surface, 
-\begin{equation}
-\int\limits_{\text{top}} \overrightarrow{D} \cdot \overrightarrow{ds} + \int\limits_{\text{bottom}} \overrightarrow{D} \cdot \overrightarrow{ds} + \int\limits_{\text{side}} \overrightarrow{D} \cdot \overrightarrow{ds} = \int\limits_{s} P_{s}ds\label{chap27-eq27.5}
-\end{equation}
+\begin{equation*}
+\textstyle\int\limits_{\text{top}} \vec{D} \cdot \vec{ds} + \int\limits_{\text{bottom}} \vec{D} \cdot \vec{ds} + \int\limits_{\text{side}} \vec{D} \cdot \vec{ds} = \int\limits_{s} P_{s}ds\label{chap27-eq27.5}
+\end{equation*}
 
-In Eqn.~\eqref{chap27-eq27.5}, as $\Delta h$ approaches zero (i.e., across boundary) the 3$^{\text{rd}}$ integral in Eqn.~???? is zero. The RHS of Eqn.~???? is zero because is dielectric $\rho_{s} = 0$.
+\newpage
+
+In Eqn.~\eqref{????}, as $\Delta h$ approaches zero (i.e., across boundary) the 3$^{\text{rd}}$ integral in Eqn.~???? is zero. The RHS of Eqn.~???? is zero because is dielectric $\rho_{s} = 0$.
 \begin{align*}
-& \int\limits_{\text{top}} \overrightarrow{D} \cdot \overrightarrow{ds} + \int\limits_{\text{bottom}} \overrightarrow{D} \cdot \overrightarrow{ds} = 0\\
-& \int Dn_{1}ds - \int Dn_{2}ds  = 0\\
-& \int (D_{n_{1}} - D_{n_{2}})ds = 0\\
+& \textstyle\int\limits_{\text{top}} \vec{D} \cdot \vec{ds} + \int\limits_{\text{bottom}} \vec{D} \cdot \vec{ds} = 0\\
+& \textstyle\int Dn_{1}ds - \int Dn_{2}ds  = 0\\
+& \textstyle\int (D_{n_{1}} - D_{n_{2}})ds = 0\\
 & D_{n_{1}} - D_{n_{2}}  = 0
 \end{align*}
 $$
-\therefore\quad  D_{n_{1}} = D_{n_{2}}  \quad\text{\&}\quad \varepsilon_{r_{1}}E_{n_{1}} = \varepsilon_{r_{2}}E_{n_{2}}. 
+\textstyle\therefore\quad  D_{n_{1}} = D_{n_{2}}  \quad\text{\&}\quad \varepsilon_{r_{1}}E_{n_{1}} = \varepsilon_{r_{2}}E_{n_{2}}. 
 $$
-Therefore across dielectric-dielectric interface normal component of $\overrightarrow{D}$ is continuous. 
+Therefore across dielectric-dielectric interface normal component of $\vec{D}$ is continuous. 
 
 \begin{problem}
-Given that $\overrightarrow{E_{1}} = 2\overrightarrow{a_{x}} - 3\overrightarrow{a_{y}} + 5\overrightarrow{a_{z}}$ across dielectric-dielectric interface shown in Fig.~\ref{chap27-fig3}. Find $\overrightarrow{E_{2}}, \overrightarrow{D_{1}}, \overrightarrow{D_{2}}$ and the angles $\theta_{1}$ and $\theta_{2}$. 
+Given that $\vec{E}_{1} = 2\vec{a}_{x} - 3\vec{a}_{y} + 5\vec{a}_{z}$ across dielectric-dielectric interface shown in Fig.~\ref{chap27-fig3}. Find $\vec{E}_{2}, \vec{D}_{1}, \vec{D}_{2}$ and the angles $\theta_{1}$ and $\theta_{2}$. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=1.1]{images/fig3.eps}\label{chap27-fig3}
@@ -100,27 +100,26 @@ Given that $\overrightarrow{E_{1}} = 2\overrightarrow{a_{x}} - 3\overrightarrow{
 \end{problem}
 
 \begin{solution}
-$\overrightarrow{a_{x}}$ and $\overrightarrow{a_{y}}$ are tangential \& $\overrightarrow{a_{2}}$ is normal to the interface
+$\vec{a}_{x}$ and $\vec{a}_{y}$ are tangential \& $\vec{a}_{2}$ is normal to the interface
 
-Given : $\overrightarrow{E_{1}} = 2\overrightarrow{a_{x}} - 3\overrightarrow{a_{y}} + 5\overrightarrow{a_{z}}$
+Given : $\vec{E}_{1} = 2\vec{a}_{x} - 3\vec{a}_{y} + 5\vec{a}_{z}$
 $$
-\therefore\quad \overrightarrow{D_{1}} = \varepsilon_{0}\varepsilon_{r_{1}} = 4\varepsilon_{0}\overrightarrow{a_{x}} - 6\varepsilon_{0}\overrightarrow{a_{y}} + 10\varepsilon_{0}\overrightarrow{a_{z}}
+\textstyle\therefore\quad \vec{D}_{1} = \varepsilon_{0}\varepsilon_{r_{1}} = 4\varepsilon_{0}\vec{a}_{x} - 6\varepsilon_{0}\vec{a}_{y} + 10\varepsilon_{0}\vec{a}_{z}
 $$
-
 From Eqns. ????? \& ?????
 \begin{align*}
-\overrightarrow{E_{2}} & = 2\overrightarrow{a_{x}} - 3\overrightarrow{a_{y}} + \left(\dfrac{2}{5}\right) 5\overrightarrow{a_{z}}\\
-\therefore\quad \overrightarrow{E_{2}} & = 2\overrightarrow{a_{x}} - 3\overrightarrow{a_{y}} + 2\overrightarrow{a_{z}}\\
-\overrightarrow{D_{2}} & = \left(\dfrac{5}{2}\right) + \varepsilon_{0}\overrightarrow{a_{x}} - \left(\dfrac{5}{2}\right) 6\varepsilon_{0}\overrightarrow{a_{y}} + 10\varepsilon_{0}\overrightarrow{a_{z}}\\
-\therefore\quad \overrightarrow{D_{2}} & = 10\varepsilon_{0}\overrightarrow{a_{x}} - 15\varepsilon_{0}\overrightarrow{a_{y}} + 10\varepsilon_{0}\overrightarrow{a_{z}}
+\vec{E}_{2} & = 2\vec{a}_{x} - 3\vec{a}_{y} + \left(\dfrac{2}{5}\right) 5\vec{a}_{z}\\
+\therefore\quad \vec{E}_{2} & = 2\vec{a}_{x} - 3\vec{a}_{y} + 2\vec{a}_{z}\\
+\vec{D}_{2} & = \left(\dfrac{5}{2}\right) + \varepsilon_{0}\vec{a}_{x} - \left(\dfrac{5}{2}\right) 6\varepsilon_{0}\vec{a}_{y} + 10\varepsilon_{0}\vec{a}_{z}\\
+\therefore\quad \vec{D}_{2} & = 10\varepsilon_{0}\vec{a}_{x} - 15\varepsilon_{0}\vec{a}_{y} + 10\varepsilon_{0}\vec{a}_{z}
 \end{align*}
 
 From Fig.~????
 \begin{align*}
-E_{z_{1}} & = \overrightarrow{E_{1}} \cdot \overrightarrow{a_{z}} = E_{1} \cos (90 - \theta_{1})\\
+E_{z_{1}} & = \vec{E}_{1} \cdot \vec{a}_{z} = E_{1} \cos (90 - \theta_{1})\\
 &\quad 5 = \sqrt{2^{2} + 3^{2} + 5^{2}} \sin \theta_{1}\\
 &\quad \theta_{1} = 54.2^{\circ}\\[0.3cm]
-E_{z_{2}} & = \overrightarrow{E_{2}} \cdot \overrightarrow{a_{z}} = E_{2} \cos (90 - \theta_{2})\\
+E_{z_{2}} & = \vec{E}_{2} \cdot \vec{a}_{z} = E_{2} \cos (90 - \theta_{2})\\
 &\quad 2 = \sqrt{2^{2} + 3^{2} + 2^{2}} \sin \theta_{2}\\
 &\quad \theta_{2} = 29.0^{\circ}
 \end{align*}
@@ -141,15 +140,15 @@ At the boundary between given ($\varepsilon_{r} = 4$) and air, the lines of elec
 \end{figure}
 
 For dielectric-dielectric interface,
-\begin{align}
-D_{t_{1}} & = \dfrac{\varepsilon_{r_{1}}}{\varepsilon_{r_{2}}} \cdot D_{t_{2}}\notag\\
-D_{1} \sin \theta_{1} & = \dfrac{1}{4} D_{2} \cdot \sin \theta_{2}\label{??}\\
-D_{n_{1}} & = D_{n_{2}}\notag\\
-D_{1} \cos \theta_{1} & = D_{2} \cos \theta_{2}\label{??}\\
-\therefore\quad \tan \theta_{1} & = \dfrac{1}{4} \tan \theta_{2}\notag\\
-\tan 40 & = \dfrac{1}{4} \tan \theta_{2}\notag\\
-\therefore\quad \theta_{2} & = 73.41^{\circ}\notag
-\end{align}
+\begin{align*}
+D_{t_{1}} & = \dfrac{\varepsilon_{r_{1}}}{\varepsilon_{r_{2}}} \cdot D_{t_{2}}\\
+D_{1} \sin \theta_{1} & = \dfrac{1}{4} D_{2} \cdot \sin \theta_{2}\\
+D_{n_{1}} & = D_{n_{2}}\\
+D_{1} \cos \theta_{1} & = D_{2} \cos \theta_{2}\\
+\therefore\quad \tan \theta_{1} & = \dfrac{1}{4} \tan \theta_{2}\\
+\tan 40 & = \dfrac{1}{4} \tan \theta_{2}\\
+\therefore\quad \theta_{2} & = 73.41^{\circ}
+\end{align*}
 
 Given that $D_{1} = 0.25\mu$ c/m$^{2}$,
 
@@ -173,16 +172,16 @@ An electric field strength 1.2 V/m is entering a dielectric medium of $\epsilon_
 \end{figure}
 
 Across dielectric-dielectric boundary, 
-\begin{align}
-E_{t_{1}} & = E_{t_{2}}\notag\\
-E_{1} \cos \theta_{1} & = E_{2} \cos \theta_{2}\label{}\\
-\varepsilon_{r_{1}}E_{n_{1}} & = \varepsilon_{r_{2}}E_{n_{2}}\notag\\
-E_{n_{1}} & = \dfrac{\varepsilon_{r_{2}}}{\varepsilon_{r_{1}}} E_{n_{2}}\notag\\
-E_{1} \sin \theta_{1} & = \dfrac{\varepsilon_{r_{2}}}{\varepsilon_{1}} E_{2} \sin \theta_{2}\label{???}\\
-\therefore\quad \tan \theta_{1} & = \dfrac{\varepsilon_{r_{2}}}{\varepsilon_{1}} \tan \theta_{2}\notag\\
-\tan 65 & = \dfrac{4}{1} \tan \theta_{2}\notag\\
-\therefore\quad \theta_{2} & = 28.2^{\circ}\notag
-\end{align}
+\begin{align*}
+E_{t_{1}} & = E_{t_{2}}\\
+E_{1} \cos \theta_{1} & = E_{2} \cos \theta_{2}\\
+\varepsilon_{r_{1}}E_{n_{1}} & = \varepsilon_{r_{2}}E_{n_{2}}\\
+E_{n_{1}} & = \dfrac{\varepsilon_{r_{2}}}{\varepsilon_{r_{1}}} E_{n_{2}}\\
+E_{1} \sin \theta_{1} & = \dfrac{\varepsilon_{r_{2}}}{\varepsilon_{1}} E_{2} \sin \theta_{2}\\
+\therefore\quad \tan \theta_{1} & = \dfrac{\varepsilon_{r_{2}}}{\varepsilon_{1}} \tan \theta_{2}\\
+\tan 65 & = \dfrac{4}{1} \tan \theta_{2}\\
+\therefore\quad \theta_{2} & = 28.2^{\circ}
+\end{align*}
 
 Given that $E_{1} = 1.2 Vm^{-1}$
 
@@ -193,12 +192,13 @@ From
 \end{align*}
 \end{solution}
 
-
 \begin{problem}
-In region $1 ; (z < 0m)$ (free space) where $D_{1} = 5\overrightarrow{a_{y}} + 7\overrightarrow{a_{z}} \text{c/m}^{2}$; region $2 ; (0 < z < 1m)$ has $\epsilon_{r_{2}} = 2.5$ and region $3 ; (z > 1m)$ has $\epsilon_{r_{3}} = 3.0$
+In region $1 ; (z < 0m)$ (free space) where $D_{1} = 5\vec{a}_{y} + 7\vec{a}_{z} \text{c/m}^{2}$; region $2 ; (0 < z < 1m)$ has $\epsilon_{r_{2}} = 2.5$ and region $3 ; (z > 1m)$ has $\epsilon_{r_{3}} = 3.0$
 
 Find $E_{1}, D_{2}, E_{2}, D_{3}, E_{3}$ and $\theta_{3}$
 \end{problem}
+
+\eject
 
 \begin{solution}
 ~
@@ -210,17 +210,17 @@ Find $E_{1}, D_{2}, E_{2}, D_{3}, E_{3}$ and $\theta_{3}$
 
 Given:
 \begin{align*}
-\overrightarrow{D_{1}} & = 5\overrightarrow{a_{y}} + 7\overrightarrow{a_{z}}\\
-\overrightarrow{E_{1}} & = \dfrac{\overrightarrow{D_{1}}}{\varepsilon_{0}} = \dfrac{1}{\varepsilon_{0}} [5\overrightarrow{a_{y}} + 7\overrightarrow{a_{z}}]\\
-D_{2} & = \left(\dfrac{2.5}{1}\right) 5\overrightarrow{a_{y}} + 7\overrightarrow{a_{z}} = 12.5\overrightarrow{a_{y}} + 7\overrightarrow{a_{z}}\\
-\overrightarrow{E_{2}} & = \dfrac{1}{\varepsilon_{0}\varepsilon_{r_{2}}} \overrightarrow{D_{2}} = \dfrac{1}{\varepsilon_{0}} \left[5\overrightarrow{a_{y}} + \dfrac{7}{2.5} \overrightarrow{a_{z}}\right]\\
-\overrightarrow{D_{3}} & = \left(\dfrac{3}{2.5}\right) 12.5\overrightarrow{a_{y}} + 7\overrightarrow{a_{z}} = 15\overrightarrow{a_{y}} + 7\overrightarrow{a_{z}}\\
-\overrightarrow{E_{3}} & = \dfrac{1}{\varepsilon_{0}\varepsilon_{r_{3}}} \overrightarrow{D_{3}} = \dfrac{1}{\varepsilon_{0}} \left[5\overrightarrow{a_{y}} + \dfrac{7}{3} \overrightarrow{a_{z}}\right]
+\vec{D}_{1} & = 5\vec{a}_{y} + 7\vec{a}_{z}\\
+\vec{E}_{1} & = \dfrac{\vec{D}_{1}}{\varepsilon_{0}} = \dfrac{1}{\varepsilon_{0}} [5\vec{a}_{y} + 7\vec{a}_{z}]\\
+D_{2} & = \left(\dfrac{2.5}{1}\right) 5\vec{a}_{y} + 7\vec{a}_{z} = 12.5\vec{a}_{y} + 7\vec{a}_{z}\\
+\vec{E}_{2} & = \dfrac{1}{\varepsilon_{0}\varepsilon_{r_{2}}} \vec{D}_{2} = \dfrac{1}{\varepsilon_{0}} \left[5\vec{a}_{y} + \dfrac{7}{2.5} \vec{a}_{z}\right]\\
+\vec{D}_{3} & = \left(\dfrac{3}{2.5}\right) 12.5\vec{a}_{y} + 7\vec{a}_{z} = 15\vec{a}_{y} + 7\vec{a}_{z}\\
+\vec{E}_{2} & = \dfrac{1}{\varepsilon_{0}\varepsilon_{r_{3}}} \vec{D}_{3} = \dfrac{1}{\varepsilon_{0}} \left[5\vec{a}_{y} + \dfrac{7}{3} \vec{a}_{z}\right]
 \end{align*}
 
 From Fig.~: 
 \begin{align*}
-D_{z_{3}} & = \overrightarrow{D_{3}} \cdot \overrightarrow{a_{z}} = D_{3} \cos (90 - \theta_{3})\\
+D_{z_{3}} & = \vec{D}_{3} \cdot \vec{a}_{z} = D_{3} \cos (90 - \theta_{3})\\
 7 & = \sqrt{15^{2} + 7^{2}} \sin \theta_{3}\\
 \therefore \theta_{3} & = 25.02^{\circ}
 \end{align*}
@@ -231,31 +231,31 @@ D_{z_{3}} & = \overrightarrow{D_{3}} \cdot \overrightarrow{a_{z}} = D_{3} \cos (
 \begin{itemize}
 \item[(a)] Thus current density,
 $$
-\mathbf{J}=\dfrac{K}{\rho} \ \mathbf{a}_{\rho}=\dfrac{31.4658}{\rho} \ \mathbf{a}_{\rho}A/m^{2}
+\textstyle\mathbf{J}=\dfrac{K}{\rho} \ \mathbf{a}_{\rho}=\dfrac{31.4658}{\rho} \ \mathbf{a}_{\rho}A/m^{2}
 $$
 The electric field intensity in region $2<\rho<3$, 
 $$
-\mathbf{E}_{1}=\dfrac{K}{100\rho} \ \mathbf{a}_{\rho}=\dfrac{31.4658}{100\rho} \ \mathbf{a}_{\rho}=\dfrac{0.3147}{\rho} \ \mathbf{a}_{\rho} V/m
+\textstyle\mathbf{E}_{1}=\dfrac{K}{100\rho} \ \mathbf{a}_{\rho}=\dfrac{31.4658}{100\rho} \ \mathbf{a}_{\rho}=\dfrac{0.3147}{\rho} \ \mathbf{a}_{\rho} V/m
 $$
 For $3<\rho<6$, the electric field intensity
 $$
-\mathbf{E}_{2}=\dfrac{K}{25\rho} \ \mathbf{a}_{\rho}=\dfrac{31.4658}{25\rho} \ \mathbf{a}_{\rho}=\dfrac{1.2586}{\rho} \ \mathbf{a}_{\rho}V/m
+\textstyle\mathbf{E}_{2}=\dfrac{K}{25\rho} \ \mathbf{a}_{\rho}=\dfrac{31.4658}{25\rho} \ \mathbf{a}_{\rho}=\dfrac{1.2586}{\rho} \ \mathbf{a}_{\rho}V/m
 $$
 
 \item[(b)] At $\rho=2$ cm, the current crossing the cylindrical surface is
 \begin{align*}
-I &= |\mathbf{J}|\times 2\pi \rho L=\dfrac{31.3658}{\rho}\times 2\pi \rho L\\
+I &= |\mathbf{J}|\times 2\pi \rho L=\dfrac{31.3658}{\rho}\times 2\pi \rho L\\[-1pt]
   &= 31.3658\times 2\pi\times 0.5=98.80~\text{A}
 \end{align*}
 The total current is independent to radius of cylinder $\rho$. The potential between the cylinders is $1$ V. Thus the resistance offered by the cylindrical resistance is
 $$
-R=\dfrac{V}{I}=\dfrac{1}{98.80}=0.01012\Omega = 10.12~ \text{m}\Omega
+\textstyle R=\dfrac{V}{I}=\dfrac{1}{98.80}=0.01012\Omega = 10.12~ \text{m}\Omega
 $$
 
 \item[(c)] The potential at $\rho=3$ cm is
 \begin{align*}
-V &= -\int\limits^{3}_{6}E_{2}.d\rho =- \int\limits^{3}_{6}\dfrac{31.4658}{25\rho}.d\rho\\
-  &= \dfrac{31.4658}{25}ln~2=0.8724\text{~V}
+\textstyle  V &= -\textstyle \int\limits^{3}_{6}E_{2}.d\rho =- \int\limits^{3}_{6}\dfrac{31.4658}{25\rho}.d\rho\\[-1pt]
+&= \textstyle\dfrac{31.4658}{25}ln~2=0.8724\text{~V}
 \end{align*}
 \end{itemize}
 
@@ -266,44 +266,45 @@ The cross-section of the transmission line shown in Fig.~6.24 is drawn on a shee
 
 Given the metallic paint on the sheet of paper shown in Fig.~6.24. The resistance of sheet is 2500 per square, dimension $a=1$ inch.
 \begin{itemize}
-\begin{minipage}[c]{4.2cm}
+\begin{minipage}[t]{5cm}
 \item[(a)] The permittivity is $\epsilon_{R}=1.6$. The calculated capacitance is $120$ pF/m. Let the thickness of paper be $t$. The total capacitance offered is $C=120t$ pF. The current is flowing from inner rim to outer rim in a non-uniform fashion.
 
 The product of resistance and capacitance of a similar geometry is
 $$
-RC=\dfrac{d}{\sigma S}\times \dfrac{\epsilon S}{d}=\dfrac{\epsilon_{0}\epsilon_{R}}{\sigma}
+\textstyle RC=\dfrac{d}{\sigma S}\times \dfrac{\epsilon S}{d}=\dfrac{\epsilon_{0}\epsilon_{R}}{\sigma}
 $$
 \end{minipage}
-\qquad
-\begin{minipage}[c]{5cm}
+\begin{minipage}[t]{5.2cm}
+~
+\vskip -.7cm
 \begin{figure}[H]
 \centering
-\includegraphics{images/new-1.eps}
+\includegraphics[scale=.9]{images/new-1.eps}
 \caption{Metallic paint on the sheet of paper-conduction from inner conductor to outer conductor}
 \end{figure}
 \end{minipage}
 
+\itemsep=0pt
 This gives
 $$
-R=\dfrac{1.6\times 8.85}{120 t\sigma}
+\textstyle R=\dfrac{1.6\times 8.85}{120 t\sigma}
 $$
 But the resistance of sheet is 2500 per square dimension $a=1$ inch.
 $$
-R_{S}=\dfrac{1}{\sigma\times t}=2500\Omega \Rightarrow \sigma\times t=\dfrac{1}{2500}
+\textstyle R_{S}=\dfrac{1}{\sigma\times t}=2500\Omega \Rightarrow \sigma\times t=\dfrac{1}{2500}
 $$
 Thus the resistance is
 $$
-R=\dfrac{1.6\times 8.85}{120 t\sigma}=\dfrac{1.6\times 8.85\times 2500}{120}=295 \Omega
+\textstyle R=\dfrac{1.6\times 8.85}{120 t\sigma}=\dfrac{1.6\times 8.85\times 2500}{120}=295 \Omega
 $$
-
 
 \item[(b)] If $a=0.6$ cm, the resistance of sheet per square inch does not vary by changing the square size, because
 $$
-R_{S}=\dfrac{1}{\sigma\times t}=2500\Omega \Rightarrow \sigma\times t=\dfrac{1}{2500}
+\textstyle R_{S}=\dfrac{1}{\sigma\times t}=2500\Omega \Rightarrow \sigma\times t=\dfrac{1}{2500}
 $$
 Thus the resistance is again
 $$
-R=\dfrac{1.6\times 8.85}{120 t\sigma}=\dfrac{1.6\times 8.85\times 2500}{120}=295\Omega
+\textstyle R=\dfrac{1.6\times 8.85}{120 t\sigma}=\dfrac{1.6\times 8.85\times 2500}{120}=295\Omega
 $$
 \end{itemize}
 
@@ -314,6 +315,7 @@ The cross-section of a coaxial transmission line is drawn on a sheet of conducti
 \noindent
 Dimension of coaxial line $a=0.5$ in and $b=3$ in. A silver paint is used for the two conducting surfaces.
 \begin{itemize}
+\itemsep=0pt
 \item[(a)] Here resistance between the conductor is $1000\Omega$.
 
 Let the thickness of paint be $t$. The capacitance is
@@ -328,7 +330,7 @@ R &= \dfrac{\epsilon_{0}}{\sigma C}=\dfrac{8.85 ln (6)}{2\pi\times 8.85\sigma t}
 \end{align*}
 But the resistance of sheet per square of the paper is
 $$
-R_{S}=\dfrac{1}{\sigma\times t}=\dfrac{1}{2.83\times 10^{-1}}=3504.94\Omega
+\textstyle R_{S}=\dfrac{1}{\sigma\times t}=\dfrac{1}{2.83\times 10^{-1}}=3504.94\Omega
 $$
 
 \item[(b)] The conducting layer of the coating is $0.008$ in $=0.008\times 0.0254$ m thick. The conductivity of resistive coating is

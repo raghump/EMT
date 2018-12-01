@@ -1,7 +1,8 @@
-\documentclass[twoside,10pt]{book}
+\documentclass[twoside,9pt]{book}
+
 
 %\usepackage[sf,sl,outermarks,bf]{titlesec}
-\usepackage{titlesec}
+%\usepackage{titlesec}
 
 \def\bGamma{\text{\boldmath$\Gamma$}}
 \def\bh{\text{\boldmath$h$}}
@@ -13,8 +14,7 @@
 %\usepackage{sectsty}
 %\sectionfont{\noindent\fbox}
 
-
-
+\usepackage{titlesec}
 
 \renewcommand{\thechapter}{\arabic{chapter}}
 \titleformat{\chapter}[display]
@@ -27,7 +27,7 @@
 [\vspace{2ex}%
 \titlerule]
 
-
+{
 \titleformat{\section}[block]
 {\fontsize{11pt}{13pt}\selectfont
 \addtolength{\titlewidth}{2pc}%
@@ -47,7 +47,7 @@
 {\thesubsection}{1em}{}
 \titlespacing{\subsection}
 {0pc}{*2}{*2}[0pc]
-
+}
 
 %\usepackage[Conny]{fncychap}
 
@@ -55,6 +55,7 @@
 \usepackage{makeidx,array,multicol,multirow,tfrupee}
 \usepackage{epsfig}
 \usepackage{amsmath,amsthm}
+\usepackage{txfonts}
 \usepackage{multicol,enumerate}
 \usepackage{amssymb,tabularx,amsfonts}
 \usepackage[makeroom]{cancel}
@@ -72,6 +73,8 @@
   basicstyle=\ttfamily,
   columns=fullflexible,
 }
+
+%\fontsize{9}{10}\selectfont
 
 \renewcommand{\theequation}{\arabic{equation}}
 
@@ -150,7 +153,7 @@
 %\setlength{\headsep}{16.4528pt}
 
 \theoremstyle{definition}
-\newtheorem{problem}[section]{Problem}
+%\newtheorem{problem}[section]{Problem}
 
 \theoremstyle{plain}
 \newtheoremstyle{thnm}{3pt}{2pt}{\itshape}{}{\bfseries}{}
@@ -286,9 +289,15 @@
   \ifFV@bgcolor\colorbox{\FV@bgcolor}{\box\FV@bgbox}\fi}
 \makeatother
 
+\usepackage{tcolorbox}
+\newtcolorbox{mycolorbox}{colback=red!5!white,colframe=red!75!black}
+
 \usepackage{shadethm}
- 
-\newshadetheorem{example}{\sffamily\bfseries\ding{234} Example}[chapter]
+
+\newtheoremstyle{thnm}{1pt}{1pt}{\itshape}{}{\bfseries}{}
+{ }{\colorbox{black}{\textcolor{white}{\bf #1 #2}}\;}
+\theoremstyle{thnm}
+\newshadetheorem{problem}{\sffamily\bfseries Problem}[chapter]
 \definecolor{shadethmcolor}{HTML}{A29d9c}
 \definecolor{shaderulecolor}{HTML}{A29d9c}
 \setlength{\shadeboxrule}{.2pt}
@@ -382,7 +391,8 @@
 
 
 \usepackage{graphicx}
-\usepackage{caption}
+\usepackage[skip=2pt,font=scriptsize]{caption}
+%\usepackage{caption}
 \usepackage{subcaption}
 \captionsetup[figure]{textfont={sf,bf},labelfont={sf,bf},justification=centering}
 %\captionsetup[figure]{textfont=bf,labelfont=bf,justification=centering}
@@ -489,7 +499,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
-\fontfamily{cmr}\fontseries{n}\selectfont
+\setlength{\abovedisplayskip}{2pt}
+\setlength{\belowdisplayskip}{2pt}
+
+\fontsize{9}{10}\selectfont
+%\fontfamily{cmr}\fontseries{n}\selectfont
 \input src/chapter1
 %\input src/chapter2
 %\input src/chapter3
