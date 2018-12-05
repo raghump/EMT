@@ -14,40 +14,63 @@
 %\usepackage{sectsty}
 %\sectionfont{\noindent\fbox}
 
-\usepackage{titlesec}
+\makeatletter
+\def\@makechapterhead#1{%
+  \vspace*{1\p@}%
+  {\parindent \z@ \centering \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+      \if@mainmatter
+        \vskip 4pt
+        \hrule height 1pt 
+        \par\nobreak
+        \vskip 5\p@
+      \fi
+    \fi
+    \interlinepenalty\@M
+   {\fontsize{21}{21}\selectfont\sf\bfseries \space\thechapter.}~  \Large\sf\bfseries #1\par\nobreak
+    \vskip 6pt
 
-\renewcommand{\thechapter}{\arabic{chapter}}
-\titleformat{\chapter}[display]
-{\bfseries\Large}
-{\filleft\MakeUppercase{\chaptertitlename} \Huge\thechapter}
-{4ex}
-{\titlerule
-\vspace{2ex}%
-\filright}
-[\vspace{2ex}%
-\titlerule]
+        \hrule height 1pt 
+    \vskip 20\p@
+  }}
+\makeatother
 
-{
-\titleformat{\section}[block]
-{\fontsize{11pt}{13pt}\selectfont
-\addtolength{\titlewidth}{2pc}%
+%\usepackage{titlesec}
+
+%\renewcommand{\thechapter}{\arabic{chapter}}
+%\titleformat{\chapter}[display]
+%{\bfseries\Large}
+%{\filleft\MakeUppercase{\chaptertitlename} \Huge\thechapter}
+%{4ex}
+%{\titlerule
+%\vspace{2ex}%
+%\filright}
+%[\vspace{2ex}%
+%\titlerule]
+
+%{
+%\renewcommand{\thesection}{\arabic{section}}
+%\titleformat{\section}[block]
+%{\fontsize{11pt}{11pt}\selectfont
+%\addtolength{\titlewidth}{2pc}%
 %\titleline*[c]{\titlerule*[.6pc]{\tiny\textbullet}}
-\addvspace{5pt}%
-\normalfont\bf\sffamily}
-{\thesection}{1em}{}
-\titlespacing{\section}
-{0pc}{*2}{*2}[0pc]
+%\addvspace{3pt}%
+%\sffamily\bfseries}
+%{\thesection}{1em}{}
+%\titlespacing{\section}
+%{0pc}{*2}{*2}[0pc]
 
-\titleformat{\subsection}[block]
-{\fontsize{11pt}{13pt}\selectfont
-\addtolength{\titlewidth}{2pc}%
+%\renewcommand{\thesubsection}{\arabic{subsection}}
+%\titleformat{\subsection}[block]
+%{\fontsize{10pt}{10pt}\selectfont
+%\addtolength{\titlewidth}{2pc}%
 %\titleline*[c]{\titlerule*[.6pc]{\tiny\textbullet}}
-\addvspace{5pt}%
-\normalfont\bf\sffamily}
-{\thesubsection}{1em}{}
-\titlespacing{\subsection}
-{0pc}{*2}{*2}[0pc]
-}
+%\addvspace{3pt}%
+%\bf\sffamily}
+%{\thesubsection}{1em}{}
+%\titlespacing{\subsection}
+%{0pc}{*2}{*2}[0pc]
+%}
 
 %\usepackage[Conny]{fncychap}
 
@@ -55,7 +78,7 @@
 \usepackage{makeidx,array,multicol,multirow,tfrupee}
 \usepackage{epsfig}
 \usepackage{amsmath,amsthm}
-\usepackage{txfonts}
+%\usepackage{txfonts}
 \usepackage{multicol,enumerate}
 \usepackage{amssymb,tabularx,amsfonts}
 \usepackage[makeroom]{cancel}
@@ -412,15 +435,16 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%Table of contents
 \renewcommand\contentsname{Contents}
-%\makeatletter
-%\renewcommand\section{\@startsection {section}{1}{0mm}%
-%                                   {-0.9ex \@plus -0.5ex \@minus -.2ex}%
-%                                   {0.8ex \@plus.2ex}%
-%                                   {\normalfont\Large\bfseries}}
-%\renewcommand\subsection{\@startsection{subsection}{2}{0mm}%
-%                                     {-0.9ex\@plus -1ex \@minus -.2ex}%
-%                                     {0.8ex \@plus .2ex}%
-%                                     {\normalfont\Large\bfseries}}
+%{
+\makeatletter
+\renewcommand\section{\@startsection {section}{1}{0mm}%
+                                   {-0.9ex \@plus -0.5ex \@minus -.2ex}%
+                                   {0.8ex \@plus.2ex}%
+                                   {\normalfont\large\sf\bfseries}}
+\renewcommand\subsection{\@startsection{subsection}{2}{0mm}%
+                                     {-0.9ex\@plus -1ex \@minus -.2ex}%
+                                     {0.8ex \@plus .2ex}%
+                                     {\normalfont\large\sf\bfseries}}
 
 %\def\@makeschapterhead#1{%
 %  \vspace*{2.5\p@}%
@@ -432,7 +456,8 @@
 %    \indent\rule{\textwidth}{2pt} 
 %    \vskip 10pt
 % }}
-%\makeatother
+\makeatother
+%}
 %\input halftitle
 
 %\input mainpage
@@ -503,7 +528,7 @@
 \setlength{\belowdisplayskip}{2pt}
 
 \fontsize{9}{10}\selectfont
-%\fontfamily{cmr}\fontseries{n}\selectfont
+\fontfamily{cmr}\fontseries{n}\selectfont
 \input src/chapter1
 %\input src/chapter2
 %\input src/chapter3

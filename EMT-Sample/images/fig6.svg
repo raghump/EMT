@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="fig5.eps">
+   sodipodi:docname="fig6.svg">
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -26,7 +26,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="2.6126185"
      inkscape:cx="174.29561"
-     inkscape:cy="163.96745"
+     inkscape:cy="102.72621"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -75,7 +75,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -206,7 +206,7 @@
        id="path8503"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:none;stroke:#000000;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
        d="m 73.13426,940.12663 177.98237,0"
        id="path15470"
        inkscape:connector-curvature="0" />
@@ -214,7 +214,7 @@
        inkscape:connector-curvature="0"
        id="path15472"
        d="m 73.13426,972.12663 177.98237,0"
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+       style="fill:none;stroke:#000000;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
     <path
        style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
        d="m 34.103353,939.83008 0,32.53441 25.64477,0"
@@ -344,7 +344,7 @@
        inkscape:connector-curvature="0"
        transform="translate(0,875.19552)" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend);stroke-miterlimit:4;stroke-dasharray:none"
        d="M 162.93158,939.82639 189.4608,921.11158"
        id="path17008"
        inkscape:connector-curvature="0"
