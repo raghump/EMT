@@ -2,4 +2,4 @@
 topmargin=15mm,botmargin=19mm,leftmargin=15mm,rightmargin=15mm,footskip=6mm,cropmarks]{zwpagelayout}
 
 \font\bigsymb=cmsy10 at 5pt
-\def\bigdot{{\kern1.2pt\raise 1.5pt\hbox{\bigsymb\char15\,}}}
+\def\bigdot{{\kern1.2pt\raise 1.5pt\hbox{\bigsymb\char15\,\,}}}

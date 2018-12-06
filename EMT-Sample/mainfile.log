@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=latex 2018.8.13)  5 DEC 2018 15:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=latex 2018.8.13)  6 DEC 2018 15:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1290,16 +1290,20 @@ File: images/fig6.eps Graphic file (type eps)
 <images/fig6.eps> [6]
 File: images/new-1.eps Graphic file (type eps)
  <images/new-1.eps>
-Overfull \hbox (4.29326pt too wide) in paragraph at lines 263--280
+Overfull \hbox (4.29326pt too wide) in paragraph at lines 265--282
 [][] [] 
  []
 
-[7])
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+[8])
 
 Package caption Warning: Unused \captionsetup[table] on input line 422.
 See the caption package documentation for explanation.
 
-[8] (./mainfile.aux)
+[9] (./mainfile.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1311,12 +1315,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 29178 strings out of 492996
- 555899 string characters out of 6132715
- 636652 words of memory out of 5000000
- 32205 multiletter control sequences out of 15000+600000
- 22858 words of font info for 87 fonts, out of 8000000 for 9000
+ 29180 strings out of 492996
+ 555912 string characters out of 6132715
+ 636676 words of memory out of 5000000
+ 32207 multiletter control sequences out of 15000+600000
+ 23115 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 65535
  54i,22n,73p,10375b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mainfile.dvi (10 pages, 42708 bytes).
+Output written on mainfile.dvi (11 pages, 43708 bytes).
